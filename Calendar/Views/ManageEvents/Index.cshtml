@@ -1,0 +1,37 @@
+﻿<style>
+    body {
+        margin: 40px 10px;
+        padding: 0;
+        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+        font-size: 14px;
+    }
+
+    #calendar {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+</style>
+<div id="error"></div>
+<div id="calendar">
+</div>
+<!-- Modal -->
+<div class="modal fade" id="event-popup" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit/Create Event</h4>
+            </div>
+            <div class="modal-body">
+                Enter Title: <input id="event-title" type="text" value="" placeholder="Enter Valid Title" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="createEvent" class="btn btn-default" data-dismiss="modal">Ok</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>
