@@ -27,9 +27,7 @@
       end: dates.end.toString()
     };
 
-    eventApi.saveEvent(eventData).done(function () {
-      calendarController.onSaveEventSuccess(eventData);
-    });
+    eventApi.saveEvent(eventData).done(refreshCalendar);
   }
 
   function setStartEnd(start, end) {

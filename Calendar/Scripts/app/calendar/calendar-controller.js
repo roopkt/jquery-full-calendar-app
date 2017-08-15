@@ -46,7 +46,9 @@
 
   function onGetAllEventsSuccess(calendarEvents) {
     logger.log('events from server: ', calendarEvents);
-    $('#calendar').fullCalendar('addEventSource', calendarEvents);
+    var $calendar = $('#calendar');
+    $calendar.fullCalendar('removeEvents');
+    $calendar.fullCalendar('addEventSource', calendarEvents);
   }
 
   function onGetAllEventsFail(d) {
